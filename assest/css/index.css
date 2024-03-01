@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nunito;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.logo {
+    border: 1px solid black;
+    width: 150px;
+    display: block;
+    margin-right: auto;
+}
+
+.menu {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+}
+
+.header {
+    background-color: red;
+    width: 100%;
+    padding: 20px 200px 20px 200px;
+}
