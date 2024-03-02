@@ -5,20 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu</title>
+    <link rel="stylesheet" href="/assest/css/menu.css">
 </head>
 
 <body>
-    <nav style="background-color: red;">
+    <nav  class="sidenav">
         <ul>
-            <li><a href="#"><img src="/assest/images/Logo-1-white.png" alt="Logo">logo</a></li>
-            <li><a href="#">index</a></li>
+            <li onclick="hideSidenav()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Contact Me</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">About Me</a></li>
         </ul>
     </nav>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="/index.html"><img class="logo" src="/assest/images/Logo-1-white.png" alt="Logo"></a></li>
+            <li class="hover-a hideOnMobile"><a href="/index.html">Home</a></li>
+            <li class="hover-a hideOnMobile"><a href="/assest/pages/contact.html">Contact Me</a></li>
+            <li class="hover-a hideOnMobile"><a href="/assest/pages/gallery.html">Gallery</a></li>
+            <li class="hover-a hideOnMobile"><a href="/assest/pages/about.html">About Me</a></li>
+            <li class="hover-a menu-button" onclick="showSidenav()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
 
     <script src="/assest/javascript/menu.js"></script>
+    <script>
+        function showSidenav(){
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'flex'
+        }
+
+        function hideSidenav () {
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
