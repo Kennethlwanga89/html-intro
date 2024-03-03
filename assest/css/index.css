@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "b b"
+    "c c"
+    "d g"
+    "e g"
+    "f g";
+}
+
+.slideshow {
+    grid-area: b;
+}
+
+.trending {
+    grid-area: c;
+}
+
+.html {
+    grid-area: d;
+}
+
+.css {
+    grid-area: e;
+}
+
+.leadership {
+    grid-area: f;
+}
+
+.sidebar {
+    grid-area: g;
+}
