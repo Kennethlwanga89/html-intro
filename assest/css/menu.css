@@ -2,60 +2,129 @@
     margin: 0;
     padding: 0;
     font-family: nunito;
+    box-sizing: border-box;
 }
 
-
 body {
+    background-color: blac;
     min-height: 100vh;
 }
 
-
-.navbar {
-    background-color: #db4439;
-    font-size: 17px;
+.logo1 {
+    width: 150px;
 }
 
+.logo {
+    padding: 16px 0;
+}
 
-.navbar ul {
+.logo a:hover {
+    background-color: #db4537da;
+}
+
+.header {
+    background-color: #db4537da;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
     width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    height: 80px;
 }
 
-
-.navbar li {
-    height: 50px;
-}
-
-
-.navbar a, .sidenav a {
-    height: 100%;
-    padding: 0px 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
+.header a {
     fill: white;
+    padding: 25px 30px;
 }
 
-
-.navbar a:hover {
-    color: black;
+.lines a:hover {
+    background-color: white;
     fill: black;
 }
-.hover-a:hover {
+
+.menu a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 26px 30px;
+    color: white;
+
+}
+
+.menu a:hover {
     background-color: white;
     color: black;
 }
 
-
-.navbar li:first-child {
-    margin-right: auto;
+.lines {
+    display: none;
 }
 
 
-.logo {
-    width: 150px;
+
+
+
+
+/* Break Points */
+
+@media (max-width: 1920px) {
+    .header {
+        padding: 0 300px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .header {
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .header {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 899px) {
+    .lines {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100vh;
+        background-color: #db4537da;
+        backdrop-filter: blur(50px);
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+    }
 }
