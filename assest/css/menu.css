@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: blac;
     min-height: 100vh;
 }
 
@@ -63,17 +63,6 @@ body {
 .lines {
     display: none;
 }
-
-.heading1 {
-    color: white;
-    border-bottom: 1px solid white;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
 
 
 

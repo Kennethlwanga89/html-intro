@@ -1,4 +1,4 @@
-body {
+/*body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(5, 1fr);
@@ -8,7 +8,7 @@ body {
         "d g"
         "e g"
         "f g";
-}
+}*/
 
 .slideshow {
     grid-area: b;
@@ -34,7 +34,29 @@ body {
     grid-area: g;
 }
 
+.heading1 {
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
 
+
+/* Styling For the carousel*/
+/* .category {
+    background-color: black;
+    backdrop-filter: blur(10px);
+    width: 300px;
+} */
+
+/* Styling For the carousel*/
+
+
+
+/* Styling For the trending section cards*/
 .main {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,33 +86,14 @@ body {
     object-fit: cover;
 }
 
-.card_price {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 0.25rem;
-    background-color: #c89b3f;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.card_price span {
-    font-size: 12px;
-    margin-top: -2px;
-}
-
 .note {
     position: absolute;
     top: 8px;
     left: 8px;
     padding: 4px 8px;
     border-radius: 0.25rem;
-    background-color: #c89b3f;
+    background-color: #db4537da;
+    color: white;
     font-size: 14px;
     font-weight: 700;
 }
@@ -108,7 +111,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: rgba(221, 11, 11, 0.918);
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -174,3 +177,8 @@ hr {
 .card_text p:last-child {
     margin: 0;
 }
+
+/* Styling For the trending section cards*/
+
+
+/* Styling For the trending section cards*/
